@@ -1,0 +1,162 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #050101;
+    cursor:pointer;
+}
+
+
+
+#container{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#products{
+    width: 80%;
+    height: 60%;
+    margin-top: 1em;
+}
+
+section > div{
+    display: flex;
+    flex-wrap: wrap ;
+    width: 100%;
+    height: 50%;
+}
+
+h2{
+    text-align: center;
+}
+
+.shelf >article {
+    background-color: #F44336;
+    margin: 1em;
+    width: 23%;
+    border: 1.8px solid #FFEB3B;
+    border-radius: 0.5em;
+}
+
+.shelf > article > img{
+    width: 100%;
+    padding: 1.8em 0em 0.8em 0em;
+}
+
+.shelf > article > .price {
+    text-align: center;
+    margin: 0.5em 3em 0.5em 3em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    border: 1.8px solid #ffffff;
+    border-radius: 0.2em;
+    font-size: 1.10em;
+    background-color: #FFEB3B;
+}
+
+#shopping_cart {
+    margin-top: 30.8em;
+    width: 20%;
+    height: 20em;
+    
+}
+
+#basket {
+    margin-top: 1.3em;
+    justify-items: flex-end;
+    background-color: #ffeb3bad;
+    min-height: 100%;
+    border-radius: 0.5em 0.5em 0em 0em;
+    border: 1.8px solid #9e9e9e;
+    
+}
+
+#basket > article {
+    display: flex;
+    flex-wrap: wrap;
+    width: 93%;
+    height: 3.8em;
+    background-color: #f3f3f3;
+    margin: 0.5em;
+    border-radius: 0.2em;
+    padding: 0.4em 0em 0.2em 0em;
+    border: 2px solid #f44336;
+    
+}
+
+#basket > article:hover{
+    border: 2px solid  #6a8399;
+}
+
+#basket > article > img{
+    height: 3.5em;
+
+}
+#basket > article > .price{
+    align-self: right;
+    padding: 9% 1em 0em 0em;
+}
+
+#basket > #info{
+    position: relative;
+    top: 1em;
+    left: 28%;
+    color: #777777;
+    align-self: start;
+}
+
+#basket > article > .product_repeat{
+    align-self: right;
+    margin-left: auto;
+    padding: 1.25em 0.5em 0px 0px;
+}
+
+#basket > article > .btn-delete{  
+    color:#42a5f5;  
+    width: 0em;
+    height: 0em;    
+}
+
+#basket > article:hover .btn-delete{
+    width: 0.5em;
+    height: 0.5em;
+    color:  #6a8399;
+    margin-top: 0.7em;
+    margin-left: -0.2em;
+    font-size: 1.6em;
+}
+
+#basket > article:hover .btn-delete > i:hover{
+    color:  #946161;
+    cursor: pointer;
+}
+
+#button_show_all{
+    position: relative;
+    top: -0.8em;
+    text-align: center;
+    font-weight: bold;
+    /*padding-bottom: 0.7em;*/
+}
+
+#button_show_all:hover{
+    color: #777777;
+    cursor: pointer;
+}
+
+#total {
+    padding: 0.7em 1em 1em 1em;
+    border-radius: 0em 0em 0.5em 0.5em;
+    background-color: #f3f3f3;
+    border: 1.8px solid #9e9e9e;
+    border-top: 0px;
+    font-weight: bold;
+}
+
+#total > #calc{
+    margin-left: 1em;
+}
+
+#total > #coin{
+    display: none;
+}

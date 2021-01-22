@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 2 - Showcase</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+</head>
+<body>
+   
+    <div id="container">
+        <div id="products">
+            <section>
+                <header>
+                    <h2>Menu Restaurante</h2>
+                    <center>
+                    <img src="img/1478 (1).png">
+                </center>
+            </br>
+                </header>
+                
+                <div class="shelf" id="menu">
+  
+                </div>                
+            </section>
+
+            <section>
+                <header>
+                    <h2>Bebidas</h2>
+                </header>
+                
+                <div class="shelf" id="othersFood">
+
+                </div>
+            </section>
+        </div>
+
+        <aside id="shopping_cart">
+            <header>
+                <h2>Carrito</h2>
+            </header>
+
+            <div id="basket" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <span id="info" disabled>Arrastra aquí</span>
+            </div>
+
+            <div id="total">
+                <span>Total</span><span id="calc"></span><span id="coin">€</span>
+            </div>    
+        </aside>    
+    </div>
+
+
+    <script src="./js/main.js"></script>
+    <script type="module" src="./js/products.js"></script>
+</body>
+</html>
